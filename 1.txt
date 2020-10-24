@@ -1,0 +1,12 @@
+1 subject
+2 inquiry reply 
+3 company k website details
+
+cart
+session array for products
+ store product id
+store data into db when db
+
+
+
+php artisan serve

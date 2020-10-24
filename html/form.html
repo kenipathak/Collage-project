@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<h2 align="center">Text Input</h2>
+<!--
+The Action Attribute
+The action attribute defines the action to be performed when the form is submitted.
+The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element.
+-->
+<div class="container">
+<div class="jumbotron text-center">
+
+<form action="/action_page.php" method="post"  target="_blank" class="form-group">
+<table align="center" border="2"  class="table table-striped">
+<caption>Form</caption>  
+  
+  <tr>
+  <td>First name:</td>
+  <td><input type="text" name="firstname" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Last name:<br></td>
+  <td><input type="text" name="lastname" class="form-control"></td>
+  </tr>	
+  
+  <tr>
+  <td>User password:</td>
+  <td><input type="password" name="psw" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>User Gender:</td>
+   <td>
+   <input type="radio" name="gender" value="male" checked class="radio-inline"> Male
+  <input type="radio" name="gender" value="female" class="radio-inline"> Female
+  <input type="radio" name="gender" value="other" class="radio-inline"> Other
+  </td>
+  </tr>
+  
+  <tr>
+  <td>User vehicle:</td>
+  <td>
+  <input type="checkbox" name="vehicle1" value="Bike" class="checkbox-inline"> I have a bike
+  <input type="checkbox" name="vehicle2" value="Car" class="checkbox-inline"> I have a car 
+  </td>
+  </tr>
+  
+  <tr>
+  <td>Select your favorite color:</td>
+  <td><input type="color" name="favcolor" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Birthday:</td>
+  <td><input type="date" name="bday" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Enter a date before 1980-01-01:</td>
+  <td><input type="date" name="bday" max="1979-12-31" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Enter a date after 2000-01-01:</td>
+  <td><input type="date" name="bday" min="2000-01-02" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Birthday (date and time):</td>
+  <td><input type="datetime-local" name="bdaytime" class="form-control"></td>
+   </tr>
+   
+   <tr>
+   <td>E-mail:</td>
+   <td><input type="email" name="email" class="form-control"></td>
+   </tr>
+   
+   <tr>
+   <td>Select a file: </td>
+   <td><input type="file" name="myFile" class="form-control"></td>
+   </tr>
+   
+   <tr>
+   <td>Birthday (month and year):</td>
+  <td><input type="month" name="bdaymonth" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Quantity (between 1 and 5):</td>
+  <td><input type="number" name="quantity" min="1" max="5" class="form-control"></td>
+  </tr>
+  
+  <tr>
+  <td>Select Car Dropdown:</td>
+  <td><select name="cars"  multiple class="form-control">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+	 <option value="Scoda">Scoda</option>
+    <option value="Renault">Renault</option>
+  </select>
+  </td>
+  </tr>
+  
+  <tr>
+  <td>Address / Comment:</td>
+  <td>
+  <textarea name="message" rows="5" cols="40" class="form-control">
+  The cat was playing in the garden.
+  </textarea>
+  </td>
+  </tr>
+  
+  <tr>
+  <td>
+  <input type="submit" name="submit" value="Submit Name" class="btn btn-primary"></td>
+  <td><input type="reset" class="btn btn-primary">
+  
+  <input type="button" onclick="alert('Hello World!')" value="Click Me!" class="btn btn-success"></td>
+  </tr>
+</table>
+</form>
+</div>
+</div>
+
+</body>
+</html>
